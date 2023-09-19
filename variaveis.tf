@@ -14,7 +14,11 @@ variable "instance" {
       security_group = "sg-033bd72986d837288"
       count          = "2"
       ami            = "ami-007855ac798b5175e"
-      key_pair       = "aws-key"
     }
   }
+}
+
+variable "aws_pub_key" {
+  description = "Public Key para VM na AWS"
+  type = string
 }
